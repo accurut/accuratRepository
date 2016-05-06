@@ -1,0 +1,51 @@
+body{
+	background-color: #ccc!important;
+	}
+.main{
+	max-width: 1170;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 70px;
+	font-size: 17px;
+	font-family:Myriad Pro;
+	color: black;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+h2{
+	font-size: 17px!important;
+	color:#1e1e1e!important;
+}
+#ultop{
+	padding-left: 17px;
+}
+.top-header {
+	border:1px solid black;
+    height: auto;
+    min-height: 168px
+}
+.imgbox{
+    margin-left: -15px;
+}
+address.top-address {
+	font-size: 20px;
+	margin: 0;
+}
+img{
+	width: 147;
+}
+#header{
+	text-align: right;
+}
+
+li{
+	list-style: none outside none;
+}
+.bullet{
+	list-style-type:disc;
+}
+address{
+	margin-bottom: 0px!important;
+}
