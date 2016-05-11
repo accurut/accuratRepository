@@ -1,0 +1,23 @@
+body {
+	background: green;
+}
+
+p {
+	font-size: 20px;
+}
+
+#firstDiv {
+	background: #ccc; 
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: bold;
+}
+
+#secondDiv {
+	background: yellow;
+	font-family: Myriad Pro, sans-serif;
+}
+
+#thirdDiv {
+	background: red;
+	font-family: Myriad Pro, sans-serif;
+}
