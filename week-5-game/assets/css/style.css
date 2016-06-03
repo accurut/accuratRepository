@@ -1,0 +1,43 @@
+.main {
+	text-align: center;
+}
+.container {
+	margin: 20px auto;
+	background-color: yellow;
+	height: auto;
+	width: 760px;
+	padding: 100px 50px;
+}
+h1 {
+	color: blue;
+	font-size: 52px;
+}
+
+button {
+	background-color: pink;
+	border: 1px solid blue;
+    margin-top: 50px;
+    width: 174px;
+    height: 65px;
+    font-size: 29px;
+}
+
+h3 {
+	padding: 20px;
+	font-size: 32px;
+}
+
+p {
+	font-size: 29px;
+	padding: 20px;
+}
+
+.correctAnswers, 
+.incorrectAnswers, 
+.answered {
+	padding: 5px;
+}
+
+label {
+	font-size: 27px;
+}
