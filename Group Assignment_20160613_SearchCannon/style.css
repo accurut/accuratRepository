@@ -1,0 +1,29 @@
+div{
+	background: grey;
+}
+header div{
+	border: 2px solid green;
+	height: 144px;
+	background-color: yellow;
+
+}
+.top_wrapper div{
+	border: 1px solid black;
+	height: 360px;
+	background-color: pink;
+
+}
+
+.bottom_wrapper div{
+	border: 1px solid red;
+	height: 360px;
+	background-color: violet;
+
+}
+footer div{
+	border: 5px solid magenta;
+	height: 288px;
+	background-color: #666;
+
+}
+
