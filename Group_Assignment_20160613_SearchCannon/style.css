@@ -1,28 +1,212 @@
 div{
 	background: grey;
 }
-header div{
-	border: 2px solid green;
-	height: 144px;
-	background-color: yellow;
-
-}
-.top_wrapper div{
-	border: 1px solid black;
-	height: 360px;
-	background-color: pink;
-
+header div{ 
+	margin: 6px 0;
 }
 
-.bottom_wrapper div{
-	border: 1px solid red;
-	height: 360px;
-	background-color: violet;
-
+header img{
+	width: 336px;
 }
+
+.form-wrapper {
+    background-color: #f6f6f6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eae8e8));
+    background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 4px;
+    width: 320px;
+}
+
+.form-wrapper #search {
+    border: 1px solid #CCC;
+    -webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+    -moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+    box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #999;
+    float: left;
+    font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
+    height: 20px;
+    padding: 10px;
+    width: 308px;
+}
+
+
+.form-search-bar {
+    background-color: #f6f6f6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eae8e8));
+    background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+    border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 4px;
+    width: 320px;
+}
+
+.form-search-bar #search-bar {
+    border: 1px solid #CCC;
+    -webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+    -moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+    box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #999;
+    float: left;
+    font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
+    height: 20px;
+    padding: 10px;
+    width: 268px;
+}
+
+.form-search-bar #submit {
+    background-color: #0483a0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#31b2c3), to(#0483a0));
+    background-image: -webkit-linear-gradient(top, #31b2c3, #0483a0);
+    background-image: -moz-linear-gradient(top, #31b2c3, #0483a0);
+    background-image: -ms-linear-gradient(top, #31b2c3, #0483a0);
+    background-image: -o-linear-gradient(top, #31b2c3, #0483a0);
+    background-image: linear-gradient(top, #31b2c3, #0483a0);
+    border: 1px solid #00748f;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+    color: #fafafa;
+    cursor: pointer;
+    height: 24px;
+    float: right;
+    font: 15px Arial, Helvetica;
+    padding: 0;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+    width: 36px;
+}
+
+
+.top_wrapper .name-representative-wiki{
+	border: 1px solid green;
+	border-radius: 15px;
+    background-color: #615869;
+    color: white; 
+    padding: 10px;
+}
+
+.top_wrapper .output-wiki{
+	background: white;
+	border: 5px solid #615869;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.top_wrapper .name-representative-images{
+	border: 1px solid green;
+	border-radius: 15px;
+    background-color: #615869;
+    color: white; 
+    padding: 10px;
+}
+
+.top_wrapper .output-images{
+	background: white;
+	border: 5px solid #615869;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.top_wrapper .name-representative-videos{
+	border: 1px solid green;
+	border-radius: 15px;
+    background-color: #615869;
+    color: white; 
+    padding: 10px;
+}
+
+.top_wrapper .output-videos{
+	background: white;
+	border: 5px solid #615869;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.bottom_wrapper .name-representative-recently-searched{
+	border: 1px solid green;
+	border-radius: 15px;
+    background-color: #615869;
+    color: white; 
+    padding: 10px;
+}
+
+.bottom_wrapper .output-recently-searched{
+	background: white;
+	border: 5px solid #615869;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.bottom_wrapper .name-representative-vote{
+    border: 1px solid green;
+	border-radius: 15px;
+    background-color: #615869;
+    color: white; 
+    padding: 10px;
+}
+
+.bottom_wrapper .output-vote{
+    background: white;
+	border: 5px solid #615869;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.bottom_wrapper .name-representative-trending{
+	border: 1px solid green;
+	border-radius: 15px;
+    background-color: #615869;
+    color: white; 
+    padding: 10px;
+}
+
+.bottom_wrapper .output-trending{
+    background: white;
+	border: 5px solid #615869;
+    height: 300px;
+    border-radius: 15px;
+}
+
 footer div{
-	border: 5px solid magenta;
-	height: 288px;
+	height: 96px;
 	background-color: #666;
 
 }

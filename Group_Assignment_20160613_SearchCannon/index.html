@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<title>A class project by JADAVC Search Cannon</title>
+		<title>A Class Project By JADAVC Search Cannon</title>
 		
 		<link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 			
@@ -19,16 +19,20 @@
 				<header>
 					<div class = "col-md-12 col-sm-12 col-xs-12">
 						<div class = "col-md-4 col-sm-4 col-xs-4">
-							LOGO
+							<img src="images/logo.png" alt="logo">
 						</div>
 
 						<div class = "col-md-4 col-sm-4 col-xs-4">
-							<input type="search" name="information" placeholder="information">
-							
+							<form class="form-wrapper">
+    							<input type="text" id="search" placeholder="Searching..." required="">
+							</form>
 						</div>
 
 						<div class = "col-md-3 col-sm-4 col-xs-4">
-							<input type="text" name="search" placeholder="search">
+							<form class="form-search-bar">
+    							<input type="text" id="search-bar" placeholder="Search for" required="">
+    							<input type="submit" value="go" id="submit">
+							</form>
 						</div>
 
 					</div> 
@@ -41,31 +45,61 @@
 				<div class = "top_wrapper">
 					<div class = "col-md-12 col-sm-12 col-xs-12">
 						<div class = "col-md-4 col-sm-4 col-xs-4">
-							WIKI
+							<div class = "name-representative-wiki">
+								WIKI
+							</div>
+							<div class = "output-wiki">
+							WIKI RESULTS
+							</div>
 						</div>
 						<div class = "col-md-4 col-sm-4 col-xs-4">
-							IMAGES
+							<div class = "name-representative-images">
+								IMAGES
+							</div>
+							<div class = "output-images">
+							IMAGES RESULTS
+							</div>
 						</div>
-						<div class = "col-md-3 col-sm-4 col-xs-4">
-							VIDEOS
+						<div class = "col-md-4 col-sm-4 col-xs-4">
+							<div class = "name-representative-videos">
+								VIDEOS
+							</div>
+							<div class = "output-videos">
+							VIDEOS RESULTS
+							</div>
 						</div>
 					</div> 
 				</div>
 			</div>
-		</div> 
+		</div>
 
 		<div class = "container"> 
 			<div class = "row">
 				<div class = "bottom_wrapper">
 					<div class = "col-md-12 col-sm-12 col-xs-12">
 						<div class = "col-md-4 col-sm-4 col-xs-4">
+							<div class = "name-representative-recently-searched">
+								RECENTLY SEARCHED
+							</div>
+							<div class = "output-recently-searched">
 							RECENTLY SEARCHED
+							</div>
 						</div>
 						<div class = "col-md-4 col-sm-4 col-xs-4">
-							VOTE
+							<div class = "name-representative-vote">
+								VOTE
+							</div>
+							<div class = "output-vote">
+							VOTE RESULTS
+							</div>
 						</div>
-						<div class = "col-md-3 col-sm-4 col-xs-4">
-							TRENDING
+						<div class = "col-md-4 col-sm-4 col-xs-4">
+							<div class = "name-representative-trending">
+								TRENDING
+							</div>
+							<div class = "output-trending">
+							TRENDING RESULTS
+							</div>
 						</div>
 					</div> 
 				</div>
