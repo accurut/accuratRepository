@@ -1,0 +1,167 @@
+<!doctype>
+<html>
+<head>
+	<title>Train Schedule</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBbwN95ylz9CUXBGkJe7DZU2ff1WXLEDkk",
+	    authDomain: "week7-4134b.firebaseapp.com",
+	    databaseURL: "https://week7-4134b.firebaseio.com",
+	    storageBucket: "week7-4134b.appspot.com",
+	  };
+	  firebase.initializeApp(config);
+	</script> 
+	<style type="text/css">
+		table {
+			background-color: yellow;
+		}
+
+		th {
+			background-color: blue;
+			color: #fff;
+		}
+
+		.links-list {
+			padding:0;
+		}
+	</style>
+</head>
+<body>
+<script>
+	function LiveLinks() {
+
+  		var firebase = new Firebase("https://week7-4134b.firebaseio.com/web/saving-data/fireblog");
+  		var linksRef = firebase.child('links');
+
+		  this.submitLink = function(url, title, trainname, firsttime, frequency, destination) {
+		    trainname = trainname.substring(0,4);/*decoded string*/
+		    linksRef.child(btoa(trainname)).set({
+		      trainname: trainname,
+		      firsttime: firsttime,
+		      frequency: frequency,
+		      destination: destination
+		    });
+		  };
+
+		  this.onLinksChanged = function() {}
+
+		  linksRef.on('value', function(snapshot) {
+		    var links = snapshot.val();
+		    var preparedLinks = [];
+		    for (var trainname in links) {
+		      if (links.hasOwnProperty(trainname)) {
+		        preparedLinks.push({
+		          trainname: links[trainname].trainname,
+		          firsttime: links[trainname].firsttime,
+		          frequency: links[trainname].frequency,
+		          destination: links[trainname].destination
+		        })
+		      }
+		    }
+		    this.onLinksChanged(preparedLinks);
+		  }.bind(this));
+
+		};
+
+		$(document).ready(function() {
+
+		  var ll = new LiveLinks('livelinks');
+
+		  ll.onLinksChanged = function(links) {
+		    links.map(function(link) {
+
+		      var linkTrainname = "<td>" + link.trainname + "</td>";
+		      var linkDestinatio = "<td>" + link.destination + "</td>";
+		      var linkFirstTime = "<td>" + link.firsttime + "</td>";
+		      var linkFrequency = "<td>" + link.frequency + "</td>";
+
+		      // $(".linklink").append(linkElement);
+		      // $(".linktrainname").append(linkTrainname);
+		      // $(".linkdestination").append(linkDestinatio);
+		      // $(".linkfirsttime").append(linkFirstTime);
+		      // $(".linkfrequency").append(linkFrequency);
+
+		      $('table.table tr:last').after('<tr><td>'+linkTrainname+'</td><td>'+linkDestinatio+'</td><td>'+linkFirstTime+'</td><td>'+linkFrequency+'</td></tr>');
+		    });
+		  };
+
+		  $(".link-form form").submit(function(event) {
+		    event.preventDefault();
+		    ll.submitLink($(this).find('input.link-url').val(), 
+		    	          $(this).find('input.link-title').val(),  
+		    	          $(this).find('input.link-trainname').val(),  
+		    	          $(this).find('input.link-destination').val(),  
+		    	          $(this).find('input.link-firsttime').val(),  
+		    	          $(this).find('input.link-frequency').val());
+		    $(this).find("input[type=text]").val("").blur();
+
+		    location.reload(); 
+		    return false;
+		  })
+
+		  
+		}); 
+
+</script>
+<div class="container links">
+      <ul class="links-list">
+      	<table class="table">
+      		<tr>
+      			<th colspan = "2">Train name</th>
+      			<th colspan = "2">Destination</th>
+      			<th colspan = "2">First Time</th>
+      			<th colspan = "2">Frequency</th>
+      		</tr>
+      		
+      		<tr>
+      			<td class="linktrainname"></td>
+      			<td class="linkdestination"></td>
+      			<td class="linkfirsttime"></td>
+      			<td class="linkfrequency"></td>
+      		</tr>
+      	</table>
+      </ul>
+    </div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-5">
+			<h1><span class="label label-primary">Train Schedule</span></h1>
+		    <div class="link-form">
+		      <form>
+
+		        <div class="form-group">
+					<label for="email">Train Name:</label>        	
+		        	<input type="text" class="link-trainname form-control" placeholder="trainname"/>
+		        </div>
+
+		        <div class="form-group">
+					<label for="email">Destination:</label>
+		        	<input type="text" class="link-destination form-control" placeholder="destination"/>
+		        </div>
+
+		        <div class="form-group">
+					<label for="email">First Time:</label>
+		        	<input type="text" class="link-firsttime form-control" placeholder="firsttime"/>
+		        </div>
+
+		        <div class="form-group">
+					<label for="email">Frequency:</label>
+		        	<input type="text" class="link-frequency form-control" placeholder="frequency"/>
+		        </div>
+
+		        <div class="form-group">
+		        	<input type="submit" class="btn btn-primary" value="submit"/>
+		        </div>
+		      </form>
+		    </div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
