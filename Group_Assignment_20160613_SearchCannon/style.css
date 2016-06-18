@@ -114,6 +114,13 @@ header img{
     width: 36px;
 }
 
+.top_header 
+{
+	text-align: center;
+	font-size: 30px Arial, Helvetica;
+	color: white;
+	font-weight: bold;
+}
 
 .top_wrapper .name-representative-wiki{
 	border: 1px solid green;
@@ -128,6 +135,7 @@ header img{
 	border: 5px solid #615869;
     height: 300px;
     border-radius: 15px;
+    margin-top: 4px;
 }
 
 .top_wrapper .name-representative-images{
@@ -143,6 +151,7 @@ header img{
 	border: 5px solid #615869;
     height: 300px;
     border-radius: 15px;
+    margin-top: 4px;
 }
 
 .top_wrapper .name-representative-videos{
@@ -158,6 +167,7 @@ header img{
 	border: 5px solid #615869;
     height: 300px;
     border-radius: 15px;
+    margin-top: 4px;
 }
 
 .bottom_wrapper .name-representative-recently-searched{
@@ -166,6 +176,7 @@ header img{
     background-color: #615869;
     color: white; 
     padding: 10px;
+    margin-top: 4px;
 }
 
 .bottom_wrapper .output-recently-searched{
@@ -173,6 +184,8 @@ header img{
 	border: 5px solid #615869;
     height: 300px;
     border-radius: 15px;
+    margin-top: 4px;
+    margin-bottom: 12px;
 }
 
 .bottom_wrapper .name-representative-vote{
@@ -181,6 +194,7 @@ header img{
     background-color: #615869;
     color: white; 
     padding: 10px;
+    margin-top: 4px;
 }
 
 .bottom_wrapper .output-vote{
@@ -188,6 +202,8 @@ header img{
 	border: 5px solid #615869;
     height: 300px;
     border-radius: 15px;
+    margin-top: 4px;
+    margin-bottom: 12px;
 }
 
 .bottom_wrapper .name-representative-trending{
@@ -196,6 +212,7 @@ header img{
     background-color: #615869;
     color: white; 
     padding: 10px;
+    margin-top: 4px;
 }
 
 .bottom_wrapper .output-trending{
@@ -203,6 +220,8 @@ header img{
 	border: 5px solid #615869;
     height: 300px;
     border-radius: 15px;
+    margin-top: 4px;
+    margin-bottom: 12px;
 }
 
 footer div{
